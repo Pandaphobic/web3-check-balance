@@ -36,7 +36,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <header className="App-header">
+        <body className="App-header">
           <Container maxWidth="sm">
             <Typography color="secondary" variant="h2" component="h2" gutterBottom>
               {walletBalance} ETH
@@ -85,6 +85,7 @@ function App() {
               Check Balance
             </Button>
             <Button
+              disabled
               onClick={handleDonate}
               style={{
                 margin: 8
@@ -111,7 +112,8 @@ function App() {
           >
             Github
           </Button>
-        </header>
+          <p style={{ position: "absolute", fontSize: ".5em", fontWeight: "400", bottom: 0 }}>Chris Steffes - chrissteffes.crypto</p>
+        </body>
       </div>
     </ThemeProvider>
   )
