@@ -100,7 +100,7 @@ function App() {
             startIcon={<GitHubIcon color="primary" />}
             onClick={e => {
               e.preventDefault()
-              window.location.href = "http://google.com"
+              window.location.href = "https://github.com/Pandaphobic/react-material-web3"
             }}
             style={{
               margin: 8
