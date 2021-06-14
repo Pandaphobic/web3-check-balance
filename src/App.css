@@ -7,10 +7,11 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo {
+  position: absolute;
+  height: 50px;
+  left: 0.25em;
+  top: 0.15em;
 }
 
 .App-header {
