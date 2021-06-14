@@ -7,8 +7,8 @@ This is primarily being used as a sandbox for learning Web3 whilst also picking 
 
 In the project directory, you can run:
 
-### `REACT_APP_URL=https://mainnet.infura.io/v3/***YOUR CODE HERE*** npm start`
+### `REACT_APP_URL=***YOUR API URL HERE*** npm start`
 
-Be sure to enter your provider API key. Only tested with infura\*
+Be sure to enter your provider API key. Only tested with infura.
 Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
