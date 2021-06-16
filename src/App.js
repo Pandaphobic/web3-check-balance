@@ -1,14 +1,8 @@
-import {
-  Container,
-  TextField,
-  Button,
-  Typography,
-  Modal,
-} from "@material-ui/core";
+import { Container, TextField, Button, Typography } from "@material-ui/core";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import QRious from "qrious"
 import logo from "./mhlogo.svg";
-import ModalComp from "./components/ModalComp";
 
 import React from "react";
 import "./App.css";
@@ -68,6 +62,10 @@ function App() {
   // Handle the Donate button being clicked
   const handleDonate = () => {
     alert("0x0A48F377D3004DD3687Fa0c93d61596F20476996");
+    var qr = new QRious({
+      element: document.getElementById("qr"),
+      value: "0x0A48F377D3004DD3687Fa0c93d61596F20476996"
+    })
   };
 
   return (
@@ -84,6 +82,7 @@ function App() {
             >
               {walletBalance} ETH
             </Typography>
+            <canvas id="qr"></canvas>
             <TextField
               onChange={onChangeWalletAddress}
               autoFocus={true}
@@ -127,6 +126,7 @@ function App() {
             >
               Check Balance
             </Button>
+            
             <Button
               onClick={handleDonate}
               style={{
