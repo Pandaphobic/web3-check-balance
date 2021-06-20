@@ -1,4 +1,4 @@
-# React-Material-Web3 - And Probably More!
+# React-Material-Web3 - Balance Checker
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This is primarily being used as a sandbox for learning Web3 whilst also picking up Material UI.
